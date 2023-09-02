@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-animation</title>
+    <link rel="shortcut icon" href="./assets/images/png/nav-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="overflow-hidden">
+        <!-- preloader -->
+        <div>
+            <div id="preloader"
+                class="min-vh-100 w-100 bg_black position-fixed start-0 top-0 d-flex align-items-center justify-content-center z_index_4 duration_300">
+                <img src="./assets/images/png/nav-logo.png" alt="nav-logo">
+            </div>
+        </div>
+        <!-- header-section -->
+        <section class="header-bg_img min-vh-100 d-flex flex-column">
+           <div class="container">
+            <nav class="pt-4 pb-2">
+                <div class="d-flex justify-content-between">
+                    <img src="./assets/images/png/nav-logo.png" alt="nav-logo">
+                    <ul id="navbar"
+                        class="d-flex flex-column list-unstyled flex-lg-row gap-5 justify-content-center align-items-center mobile_view z-index_3">
+                        <li class="position-relative">
+                            <a onclick="opennav()" href=" #home" class="text-white fw_500 fs_16 ff_gilorymedium nav-line">Home</a>
+                        </li>
+                        <li class="position-relative">
+                            <a onclick="opennav()" href="#about" class="text-white fw_500 fs_16 ff_gilorymedium nav-line">About</a>
+                        </li>
+                        <li class="position-relative">
+                            <a onclick="opennav()" href="#products"
+                                class="text-white fw_500 fs_16 ff_gilorymedium nav-line">Products</a>
+                        </li>
+                        <li class="position-relative">
+                            <a onclick="opennav()" href="#contact us"
+                                class="text-white fw_500 fs_16 ff_gilorymedium nav-line">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                    <div id="menubtn-icon" onclick="opennav()" class="d-lg-none z-3 pe-2 pt-2">
+                        <div class="line"></div>
+                        <div class="line1 my-2"></div>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+            <div class="flex-grow-1 d-flex justify-content-center align-items-center">
+                <div class="container" data-aos="zoom-in-up">
+                    <h2 class="ff_giloryblack fw_900 fs_122 text-white text-center">3D PRODUCT<h2>
+                            <p class="ff_giloryblack fw_900 fs_137 text-white text-center">ANIMATION</p>
+                </div>
+            </div>
+        </section>
+        <!-- contact-us -->
+        <section class="bg-lightwhite position-relative">
+            <img src="./assets/images/png/grey-line-img.png" alt="grey-line-img"
+                class="position-absolute right_2 top_4 ">
+            <div class="container pt-lg-200 pb-lg-200 pt_100 pb_100">
+                <div class="row ">
+                    <div class="col-lg-7 col-12 d-flex align-items-center justify-content-start flex-column pb-3 pb-lg-0"
+                        data-aos="fade-right">
+                        <h3 class="ff_giloryblack fw_900 fs_45 text text_black">NISI ETDIAM EUISMOD SUSPENDISSE
+                            TRISTIQUE
+                            QUIS</h3>
+                    </div>
+                    <div class="col-lg-5 col-12 d-flex justify-content-end" div data-aos="fade-left">
+                        <div>
+                            <h3 class="fw_400 ff_giloryregular fs_16 text_clr line_height_27 mb-4 max-width_440">
+                                Tincidunt
+                                phasellus
+                                id imperdiet lorem blandit. Congue donec scelerisque congue pellentesque.</h3>
+                            <div class="button-shadow position-relative d-inline-flex">
+                                <a href="" class="button ff_gilorybold fs_16 fw_700 text-white">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- overflow-slider -->
+        <section class="bg-lightwhite overflow-hidden position-relative">
+            <img src="./assets/images/png/grey-img-2.png" alt="grey-img-2" class="position-absolute left_40 bottom_21">
+            <div class="container pb_100">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-8 col-12" data-aos="fade-down-right">
+                        <h4 class="ff_giloryblack fw_900 fs_65 text_black pb-2 pb-lg-0">Our Portfolios</h4>
+                    </div>
+                    <div class="col-lg-4 col-12 d-flex justify-content-lg-end" data-aos="fade-down-left">
+                        <div class="border me-2">
+                            <button class="first circle_btn">
+                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.6142 19.887L12.249 13.5218L18.6142 7.15658L17.3412 4.6105L8.42985 13.5218L17.3412 22.4331L18.6142 19.887Z"
+                                        fill="white" />
+                                    <path
+                                        d="M18.6142 19.887L12.249 13.5218L18.6142 7.15658L17.3412 4.6105L8.42985 13.5218L17.3412 22.4331L18.6142 19.887Z"
+                                        fill="url(#paint0_linear_1_44)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_1_44" x1="17.3883" y1="24.6471" x2="3.40761"
+                                            y2="16.294" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FF2801" />
+                                            <stop offset="1" stop-color="#FF6500" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="border">
+                            <button class="second circle_btn">
+                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.38519 19.887L14.7504 13.5218L8.38519 7.15658L9.65824 4.6105L18.5695 13.5218L9.65824 22.4331L8.38519 19.887Z"
+                                        fill="url(#paint0_linear_1_44)" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="myslider pt-5">
+                        <div class="pe-3" data-aos="fade-up-left">
+                            <img src="./assets/images/png/purple-flower.png" alt="purple-flower" class="w-100">
+                        </div>
+                        <div class="pe-3" data-aos="fade-up-left">
+                            <img src="./assets/images/png/chair.png" alt="chair-img" class="w-100">
+                        </div>
+                        <div class="pe-3" data-aos="fade-up-left">
+                            <img src="./assets/images/png/gold-nuts.png" alt="gold-nuts" class="w-100">
+                        </div>
+                        <div class="pe-3" data-aos="fade-up-left">
+                            <img src="./assets/images/png/green-shadow-img.png" alt="green-shadow-img" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- red-img -->
+        <section class="bg_black position-relative">
+            <img src="./assets/images/png/grey-line-3.png" alt="grey-line-3"
+                class="position-absolute bottom_21 right_33">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-12 p-0" data-aos="fade-right">
+                        <img src="./assets/images/png/red-img.png" alt="red-img" class="w-100">
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center pt_100 pb_100 pt-lg-0 pb-lg-0 ps-5 ps-lg-0"
+                        data-aos="fade-left">
+                        <div>
+                            <h3 class="fs_65 ff_giloryblack fw_900 text-white max-width_500">SED VOLUTPAT ERAT DIGNISSIM
+                                IACULIS AENEAN</h3>
+                            <p class="ff_giloryregular fs_16 fw_400 text-white max-width_489 mb-5">Tincidunt phasellus
+                                id
+                                imperdiet lorem blandit. Congue donec scelerisque congue pellentesque massa porta vel
+                                donec
+                                dapibus.</p>
+                            <div class="button-shadow position-relative d-inline-flex">
+                                <a href="" class="button ff_gilorybold fs_16 fw_700 text-white mt-2">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- headphone-img -->
+        <section class="bg-white position-relative">
+            <img src="./assets/images/png/grey-line-4.png" alt="grey-line-4"
+                class="position-absolute bottom_21 left_40">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center flex-column pt_100 pb_100 pt-lg-0 pb-lg-0 ps-5 ps-lg-0"
+                        data-aos="fade-right">
+                        <div>
+                            <h2 class="ff_giloryblack fw_900 fs_65 text_black max-width_532">AT TEMPOR, AMET VIVERRA
+                                EU QUISQUE</h2>
+                            <p class="ff_giloryregular fw_400 fs_16 text_clr max-width_540 pb-3">Faucibus pulvinar enim
+                                in
+                                sagittis.
+                                Aliquam libero dolor iaculis in aliquam. Cursus nibh enim sed et, mauris morbi.
+                                Faucibus viverra et diam sit cursus. Pellentesque posuere.</p>
+                            <div class="button-shadow position-relative d-inline-flex">
+                                <a href="" class="button ff_gilorybold fs_16 fw_700 text-white">Talk To Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 p-0" data-aos="fade-left">
+                        <img src="./assets/images/png/headphn-img.png" alt="headphn-img" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- john-smith-section -->
+        <section class="bg-black position-relative">
+            <img src="./assets/images/png/grey-img-5.png" alt="grey-img-5" class="position-absolute right_2 bottom_21">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-12 p-0" data-aos="fade-right">
+                        <img src="./assets/images/png/man-img.png" alt="man-img" class="w-100">
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center pt_100 pb_100 pt-lg-0 pb-lg-0 ps-5 ps-lg-0"
+                        data-aos="fade-left">
+                        <div>
+                            <h2 class="ff_giloryregular fw_400 fs_16 text-white">ABOUT ME</h2>
+                            <p class="ff_giloryblack fw_900 fs_40 text-white">JOHN SMITH</p>
+                            <p class="ff_giloryregular fw_400 fs_16 text-white max-width_489 pb-3">Euismod nunc mauris
+                                lacinia sapien nulla
+                                accumsan condimentum. Lectus vitae tristique tellus amet quis eu faucibus leo.
+                                Dictum mauris ultrices sed urna, eget cras. Nullam egestas eros senectus et, erat
+                                aliquet
+                                in. Egestas interdum gravida
+                                pellentesque amet, quisque. In quis vitae lectus aenean congue odio sit semper porta.
+                                Pellentesque id tempus, mauris
+                                donec facilisis.</p>
+                            <div class="button-shadow position-relative d-inline-flex">
+                                <a href="" class="button ff_gilorybold fs_16 fw_700 text-white">Contact with Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <section class="footer_bg-img d-flex justify-content-center align-items-center flex-column position-relative">
+            <img src="./assets/images/png/circle-line.png" alt="circle-line" class="position-absolute right_25 top_22">
+            <img src="./assets/images/png/circle-line.png" alt="circle-line" class="position-absolute right_33 top_50">
+            <img src="./assets/images/png/grey-line-6.svg" alt="grey-line-6" class="position-absolute top_2 left_2">
+            <img src="./assets/images/png/grey-line-7.png" alt="grey-line-7"
+                class="position-absolute right_2 bottom_12">
+            <p class="ff_giloryregular fw_400 fs_20 text_grey transform-rotate left_200 d-none d-lg-block">Behance /
+                Youtube
+                / LinkedIn</p>
+            <p class="ff_giloryregular fw_400 fs_20 text_grey transform-rotate right_200 d-none d-lg-block">Twitter /
+                Facebook / Instagram</p>
+            <div class="container pt_176">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-7 col-12 d-flex align-items-center justify-content-center"
+                        data-aos="zoom-in-down">
+                        <div>
+                            <img src="./assets/images/png/nav-logo.png" alt="nav-logo" class="mb-3">
+                            <h2 class="fs_65 fw_900 ff_giloryblack text-black max-width_741">UTN VULPUTATE
+                                RUTRUM BIBEND PURU.</h2>
+                            <p class="ff_giloryregular fw_400 fs_16 text_grey max_width_633 mb-5">Faucibus pulvinar enim
+                                in
+                                sagittis.
+                                Aliquam libero dolor iaculis in aliquam. Cursus nibh enim sed et, mauris morbi.
+                                Faucibus viverra et diam sit cursus.</p>
+                            <div class="email-box d-flex align-items-center px-2 py-1 ">
+                                <div class="d-flex align-items-center clr_grey mw-315 w-100">
+                                    <span class="mb_3">
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.67895 3.57422C5.05029 3.57422 4.44738 3.82395 4.00286 4.26848C3.55833 4.71301 3.30859 5.31592 3.30859 5.94458V6.1828L10.4197 10.0121L17.5307 6.18398V5.94458C17.5307 5.31592 17.281 4.71301 16.8365 4.26848C16.3919 3.82395 15.789 3.57422 15.1604 3.57422H5.67895ZM17.5307 7.52916L10.7006 11.2068C10.6142 11.2532 10.5177 11.2776 10.4197 11.2776C10.3216 11.2776 10.2251 11.2532 10.1388 11.2068L3.30859 7.52916V13.0556C3.30859 13.6843 3.55833 14.2872 4.00286 14.7317C4.44738 15.1763 5.05029 15.426 5.67895 15.426H15.1604C15.789 15.426 16.3919 15.1763 16.8365 14.7317C17.281 14.2872 17.5307 13.6843 17.5307 13.0556V7.52916Z"
+                                                fill="#B2B2B2" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" name="Enter your email here" placeholder="Enter Email Address"
+                                        class="email text_white w-100 h-100">
+                                </div>
+                                <div class="button-shadow position-relative d-inline-flex">
+                                    <a href="" class="ff_giloryregular fw_400 fs_16 text-white submit-button">SUBMIT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-12 d-flex flex-lg-column flex-row justify-content-center gap-4 pt_60 pt-lg-0"
+                        data-aos="zoom-in-left">
+                        <div class="footer_icon">
+                            <a href="" class="d-flex justify-content-center align-items-center h-100">
+                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.6117 8.18854C9.1363 8.18854 7.93229 9.41872 7.93229 10.9262C7.93229 12.4336 9.1363 13.6638 10.6117 13.6638C12.087 13.6638 13.291 12.4336 13.291 10.9262C13.291 9.41872 12.087 8.18854 10.6117 8.18854ZM18.6478 10.9262C18.6478 9.7925 18.6578 8.66911 18.5955 7.53751C18.5332 6.22312 18.2397 5.0566 17.299 4.09546C16.3563 3.13226 15.2166 2.83447 13.9302 2.7708C12.8207 2.70714 11.7212 2.71741 10.6137 2.71741C9.50414 2.71741 8.40465 2.70714 7.29712 2.7708C6.0107 2.83447 4.869 3.13431 3.92831 4.09546C2.9856 5.05866 2.69415 6.22312 2.63184 7.53751C2.56953 8.67117 2.57958 9.79456 2.57958 10.9262C2.57958 12.0578 2.56953 13.1832 2.63184 14.3148C2.69415 15.6292 2.98761 16.7957 3.92831 17.7569C4.87101 18.7201 6.0107 19.0179 7.29712 19.0815C8.40666 19.1452 9.50615 19.1349 10.6137 19.1349C11.7232 19.1349 12.8227 19.1452 13.9302 19.0815C15.2166 19.0179 16.3583 18.718 17.299 17.7569C18.2417 16.7937 18.5332 15.6292 18.5955 14.3148C18.6598 13.1832 18.6478 12.0598 18.6478 10.9262ZM10.6117 15.1384C8.33028 15.1384 6.48909 13.2571 6.48909 10.9262C6.48909 8.59518 8.33028 6.71396 10.6117 6.71396C12.8931 6.71396 14.7342 8.59518 14.7342 10.9262C14.7342 13.2571 12.8931 15.1384 10.6117 15.1384ZM14.9031 7.52519C14.3704 7.52519 13.9403 7.08569 13.9403 6.54145C13.9403 5.99721 14.3704 5.55771 14.9031 5.55771C15.4357 5.55771 15.8659 5.99721 15.8659 6.54145C15.866 6.67068 15.8413 6.79868 15.7929 6.9181C15.7446 7.03753 15.6737 7.14604 15.5842 7.23742C15.4948 7.3288 15.3886 7.40125 15.2717 7.45063C15.1548 7.50001 15.0296 7.52535 14.9031 7.52519Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer_icon">
+                            <a href="" class="d-flex justify-content-center align-items-center h-100">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_147)">
+                                        <path
+                                            d="M8.62396 9.92493C8.62396 9.92493 10.5711 9.77365 10.5711 7.39429C10.5711 5.01183 8.97798 3.85303 6.95882 3.85303H0.316772V17.1556H6.95882C6.95882 17.1556 11.0146 17.2884 11.0146 13.2285C11.0136 13.2274 11.1906 9.92493 8.62396 9.92493ZM3.24364 6.21592H6.95882C6.95882 6.21592 7.8624 6.21592 7.8624 7.59908C7.8624 8.9843 7.33136 9.18498 6.72829 9.18498H3.24364V6.21592ZM6.77049 14.7907H3.24364V11.235H6.95882C6.95882 11.235 8.30493 11.2165 8.30493 13.0617C8.30493 14.6178 7.29946 14.7794 6.77049 14.7907ZM16.4217 7.2358C11.5117 7.2358 11.5158 12.3475 11.5158 12.3475C11.5158 12.3475 11.1803 17.4325 16.4217 17.4325C16.4217 17.4325 20.7883 17.6939 20.7883 13.8953H18.5428C18.5428 13.8953 18.6169 15.3269 16.4969 15.3269C16.4969 15.3269 14.2492 15.4833 14.2492 13.0113H20.8594C20.8604 13.0103 21.589 7.2358 16.4217 7.2358ZM18.4193 11.235H14.2266C14.2266 11.235 14.5003 9.18498 16.4722 9.18498C18.444 9.18498 18.4193 11.235 18.4193 11.235ZM18.941 4.63414H13.675V6.27459H18.941V4.63414Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_147">
+                                            <rect width="20.5827" height="20.5827" fill="white"
+                                                transform="translate(0.316772 0.353027)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer_icon">
+                            <a href="" class="d-flex justify-content-center align-items-center h-100">
+                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.3138 16.8067H10.2967C10.2435 16.8067 4.92372 16.7964 3.58155 16.4319C3.2189 16.3342 2.88827 16.143 2.62277 15.8773C2.35727 15.6117 2.16621 15.2809 2.06872 14.9182C1.82737 13.5566 1.71083 12.1759 1.72053 10.7931C1.7143 9.40806 1.834 8.02532 2.07816 6.66197C2.1784 6.29866 2.37034 5.96721 2.63556 5.69944C2.90078 5.43167 3.23037 5.23656 3.5927 5.13284C4.89799 4.78979 10.0711 4.78979 10.2907 4.78979H10.3087C10.3627 4.78979 15.6962 4.80009 17.0246 5.16457C17.7613 5.3644 18.3368 5.93985 18.5358 6.67654C18.7845 8.04358 18.902 9.43034 18.8848 10.8197C18.8908 12.203 18.7708 13.5841 18.5263 14.9457C18.4276 15.308 18.2357 15.6381 17.9699 15.9034C17.7041 16.1686 17.3735 16.3597 17.0109 16.4576C15.7073 16.8032 10.5334 16.8067 10.3138 16.8067ZM8.59859 8.22454L8.5943 13.3702L13.0642 10.7974L8.59859 8.22454Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer_icon">
+                            <a href="" class="d-flex justify-content-center align-items-center h-100">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.58484 19.1747H12.6002V11.662H15.1216L15.5024 8.73923H12.6002V6.86621C12.6002 6.02232 12.8369 5.446 14.0513 5.446H15.6053V2.8217C15.3377 2.79083 14.4218 2.7085 13.3515 2.7085C11.108 2.7085 9.58484 4.07725 9.58484 6.57805V8.73923H7.05316V11.662H9.58484V19.1747Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer_icon">
+                            <a href="" class="d-flex justify-content-center align-items-center h-100">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.9748 6.53417C18.7436 6.07457 19.3189 5.35087 19.5932 4.4982C18.8708 4.92685 18.0804 5.22879 17.2562 5.39097C16.7003 4.80295 15.9664 4.41408 15.1677 4.28431C14.369 4.15454 13.5498 4.29107 12.8364 4.67286C12.1229 5.05464 11.5548 5.66049 11.2197 6.39701C10.8846 7.13352 10.801 7.95982 10.9819 8.74853C9.51867 8.67507 8.08728 8.29475 6.78059 7.63225C5.47391 6.96975 4.32115 6.03987 3.39712 4.90299C2.92721 5.71352 2.78341 6.67253 2.99494 7.58524C3.20648 8.49795 3.75747 9.29593 4.53603 9.81712C3.95175 9.79833 3.38042 9.64014 2.86969 9.35572V9.40203C2.86985 10.2519 3.16396 11.0756 3.70214 11.7333C4.24032 12.3911 4.98944 12.8424 5.82245 13.0109C5.2805 13.1583 4.71202 13.18 4.1604 13.0743C4.39601 13.8053 4.85396 14.4445 5.47032 14.9026C6.08669 15.3608 6.83072 15.6151 7.59857 15.63C6.29485 16.6533 4.68481 17.2082 3.02749 17.2055C2.73333 17.2055 2.44003 17.1883 2.14844 17.1549C3.83143 18.2363 5.79019 18.8103 7.79068 18.8083C9.16852 18.8178 10.5345 18.5534 11.8093 18.0304C13.0841 17.5075 14.2423 16.7365 15.2165 15.7621C16.1908 14.7878 16.9617 13.6295 17.4846 12.3547C18.0074 11.0799 18.2717 9.71386 18.2621 8.33602C18.2621 8.1765 18.2587 8.01784 18.251 7.86004C18.9718 7.33914 19.5939 6.69383 20.088 5.95443C19.4165 6.25206 18.7042 6.44747 17.9748 6.53417Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer_icon">
+                            <a href="" class="d-flex justify-content-center align-items-center h-100">
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_1_163" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2"
+                                        y="1" width="18" height="18">
+                                        <path
+                                            d="M4.68801 5.24418C5.6353 5.24418 6.40323 4.47624 6.40323 3.52895C6.40323 2.58165 5.6353 1.81372 4.68801 1.81372C3.74071 1.81372 2.97278 2.58165 2.97278 3.52895C2.97278 4.47624 3.74071 5.24418 4.68801 5.24418Z"
+                                            fill="white" />
+                                        <path
+                                            d="M2.9729 7.81689H6.40335V18.5371H2.9729V7.81689ZM9.83381 11.8906V18.5371H12.8355V12.5338C12.8355 11.4618 13.4787 10.6041 14.5507 10.6041C15.6227 10.6041 16.2659 11.6762 16.2659 12.5338V18.5371H19.2676V11.8906C19.2676 10.6041 17.7667 7.81689 14.5507 7.81689C11.3346 7.81689 9.83381 10.6041 9.83381 11.8906Z"
+                                            fill="white" />
+                                    </mask>
+                                    <g mask="url(#mask0_1_163)">
+                                        <path d="M0.826172 0.0986328H21.4089V20.6814H0.826172V0.0986328Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pt_189">
+                <div class="row">
+                    <hr>
+                    <div class="col-6 d-flex justify-content-center mt-3">
+                        <h2 class="ff_giloryregular fw_400 fs_16 clr_grey">Copyright ©2022 | ABA</h2>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center mt-3">
+                        <h2 class="ff_giloryregular fw_400 fs_16 clr_grey">Copyright ©2022 | ABA</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            function opennav() {
+                document.getElementById("navbar").classList.toggle("start-0");
+                document.body.classList.toggle("overflow-hidden")
+                document.getElementById("menubtn-icon").classList.toggle("cross");
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init({ once: true, });
+        </script>
+        <script>
+            setTimeout(() => {
+                console.log("Delayed for 5 second.");
+                document.getElementById("preloader").classList.add("opacity-0")
+                document.getElementById("preloader").classList.add("pointer_event_none")
+                document.body.classList.remove("overflow-hidden")
+            }, 5000);
+        </script>
+
+        <script>
+            $('.myslider').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                prevArrow: ".first",
+                nextArrow: ".second",
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false,
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        </script>
+    </div>
+</body>
+
+</html>
