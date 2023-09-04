@@ -267,7 +267,7 @@
     transform: rotate(-90deg);
     position: absolute;
     line-height: 23px;
-    letter-spacing: 6px;
+    letter-spacing:5px;
     top: 50%;
 }
 
