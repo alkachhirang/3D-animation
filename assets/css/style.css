@@ -152,8 +152,8 @@
     left: 2%;
 }
 
-.bottom_12 {
-    bottom: 12%;
+.bottom_10 {
+    bottom: 10%;
 }
 
 .pt_176 {
@@ -194,6 +194,28 @@
     background: transparent;
     border: 1px solid #b2b2b2;
     max-width: 416px;
+}
+.glass_hover {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.glass_hover::before {
+    content: "";
+    background: rgb(255, 255, 255, 0.4);
+    width: 50%;
+    height: 100%;
+    left: -125%;
+    top: 0%;
+    transform: skew(45deg);
+    filter: blur(30px);
+    position: absolute;
+    transition: left 0.5s ease-in-out;
+}
+
+.glass_hover:hover::before {
+    left: 150%;
 }
 
 .footer_icon {
