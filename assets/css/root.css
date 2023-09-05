@@ -136,7 +136,7 @@
 .ff_giloryregular {
     font-family: "giloryregular";
 }
-@media (max-width:768px) {
+@media (min-width:576px) and (max-width:768px) {
     :root {
     
             /* font-size */
