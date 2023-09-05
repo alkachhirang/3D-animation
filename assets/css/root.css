@@ -22,6 +22,7 @@
   --clr:#525252;
   --clr-grey:#b1b1b1;
   --text-white:#ffffff;
+  --bg-clr:#e1e1e1;
 
   /* font-weight */
   --fw-400:400;
@@ -41,6 +42,9 @@
 }
 .bg-white{
     background-color: var(--bg-white);
+}
+.bgclr_white{
+    background-color: var(--bg-clr);
 }
 .bg_black{
     background-color:var(--bg-black) ;
